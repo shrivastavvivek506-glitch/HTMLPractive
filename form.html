@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
+
 <body>
     <label for="name">Name:</label>
     <input type="text">
@@ -15,8 +17,36 @@
     <label for="password">Password:</label>
     <input type="password">
     <br><br>
-    <label for="datetime">Date & Time:</label>
-    <input type="datetime">
+    <label>moblie</label>
+    <input type="number">
     <br><br>
+    <label for="datetime">Date & Time:</label>
+    <input type="datetime-local">
+    <br><br>
+    <label for="text">Address:</label>
+    <textarea name="text" id="text" cols="15" rows="10"></textarea>
+    <br><br>
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="other"> Other
+    <br><br>
+    <label for="hobbies">Hobbies:</label>
+    <input type="radio" name="hobbies" value="reading"> Reading
+    <input type="radio" name="hobbies" value="writing"> Writing
+    <input type="radio" name="hobbies" value="coding"> Coding
+    <br><br>
+    <label for="country">Country:</label>
+    <select name="country" id="country">
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="japan">Japan</option>
+    </select>
+    <br><br>
+    <label for="file">Upload File:</label>
+    <input type="file" name="file" id="file">
+
+    
 </body>
+
 </html>
