@@ -1,0 +1,390 @@
+
+New chat
+Images
+Plugins
+See plans and pricing
+Help
+Get responses tailored to you
+
+Log in to get answers based on saved chats, plus create images and upload files.
+
+    You said:
+    ChatGPT said:
+
+    If you mean advanced HTML code, here is a modern example using HTML5, CSS, JavaScript, animations, responsive design, and a dark-mode toggle:
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Advanced modern HTML website">
+      <title>Advanced Modern Website</title>
+
+      <style>
+        :root {
+          --bg: #0f172a;
+          --card: #1e293b;
+          --text: #f8fafc;
+          --primary: #6366f1;
+          --secondary: #22d3ee;
+        }
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          scroll-behavior: smooth;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          background: var(--bg);
+          color: var(--text);
+          line-height: 1.6;
+          transition: 0.3s;
+        }
+
+        header {
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+          background: rgba(15, 23, 42, 0.85);
+          backdrop-filter: blur(12px);
+          padding: 20px 8%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .logo {
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: var(--secondary);
+        }
+
+        nav {
+          display: flex;
+          gap: 25px;
+        }
+
+        nav a {
+          color: white;
+          text-decoration: none;
+          transition: 0.3s;
+        }
+
+        nav a:hover {
+          color: var(--secondary);
+        }
+
+        .hero {
+          min-height: 90vh;
+          display: grid;
+          place-items: center;
+          text-align: center;
+          padding: 40px 8%;
+          background:
+            radial-gradient(circle at top right, #312e81, transparent 40%),
+            radial-gradient(circle at bottom left, #164e63, transparent 40%);
+        }
+
+        .hero h1 {
+          font-size: clamp(2.5rem, 7vw, 6rem);
+          animation: fadeUp 1s ease;
+        }
+
+        .hero span {
+          color: var(--secondary);
+        }
+
+        .hero p {
+          max-width: 650px;
+          margin: 20px auto;
+          color: #cbd5e1;
+          font-size: 1.1rem;
+        }
+
+        .btn {
+          display: inline-block;
+          margin-top: 20px;
+          padding: 14px 28px;
+          border-radius: 30px;
+          background: linear-gradient(90deg, var(--primary), var(--secondary));
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          transition: transform 0.3s;
+        }
+
+        .btn:hover {
+          transform: translateY(-5px) scale(1.03);
+        }
+
+        section {
+          padding: 90px 8%;
+        }
+
+        .title {
+          text-align: center;
+          margin-bottom: 50px;
+          font-size: 2.5rem;
+        }
+
+        .cards {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 25px;
+        }
+
+        .card {
+          background: var(--card);
+          padding: 30px;
+          border-radius: 20px;
+          border: 1px solid rgba(255,255,255,0.08);
+          transition: 0.4s;
+        }
+
+        .card:hover {
+          transform: translateY(-10px);
+          border-color: var(--secondary);
+          box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .card h3 {
+          color: var(--secondary);
+          margin-bottom: 15px;
+        }
+
+        form {
+          max-width: 600px;
+          margin: auto;
+          display: grid;
+          gap: 15px;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 15px;
+          border: none;
+          border-radius: 10px;
+          background: var(--card);
+          color: white;
+          outline: none;
+        }
+
+        textarea {
+          min-height: 150px;
+          resize: vertical;
+        }
+
+        button {
+          border: none;
+          cursor: pointer;
+          padding: 15px;
+          border-radius: 10px;
+          background: linear-gradient(90deg, var(--primary), var(--secondary));
+          color: white;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+
+        footer {
+          text-align: center;
+          padding: 30px;
+          background: #020617;
+          color: #94a3b8;
+        }
+
+        #topBtn {
+          position: fixed;
+          right: 20px;
+          bottom: 20px;
+          display: none;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          background: var(--primary);
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+
+        @keyframes fadeUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @media (max-width: 700px) {
+          header {
+            flex-direction: column;
+            gap: 15px;
+          }
+
+          nav {
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        }
+      </style>
+    </head>
+
+    <body>
+
+      <header>
+        <div class="logo">NEXUS</div>
+
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+
+        <section class="hero" id="home">
+          <div>
+            <h1>Build <span>Something Amazing</span></h1>
+
+            <p>
+              A modern responsive website built with HTML5, CSS3 and JavaScript.
+              Fast, interactive and mobile-friendly.
+            </p>
+
+            <a href="#features" class="btn">Explore Now</a>
+          </div>
+        </section>
+
+        <section id="features">
+          <h2 class="title">Advanced Features</h2>
+
+          <div class="cards">
+
+            <article class="card">
+              <h3>⚡ Fast</h3>
+              <p>
+                Optimized structure and lightweight code for a fast user experience.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>📱 Responsive</h3>
+              <p>
+                Automatically adapts to phones, tablets, laptops and desktop screens.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>🎨 Modern UI</h3>
+              <p>
+                Beautiful gradients, glass effects, animations and interactive cards.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>🔒 Secure</h3>
+              <p>
+                Uses semantic HTML and clean frontend architecture as a strong base
+                for a secure application.
+              </p>
+            </article>
+
+          </div>
+        </section>
+
+        <section id="about">
+          <h2 class="title">About</h2>
+
+          <div class="card">
+            <p>
+              This template demonstrates modern HTML5 semantic elements,
+              responsive CSS Grid, animations, forms and JavaScript interactions.
+            </p>
+          </div>
+        </section>
+
+        <section id="contact">
+          <h2 class="title">Contact Us</h2>
+
+          <form id="contactForm">
+
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              required
+            >
+
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              required
+            >
+
+            <textarea
+              id="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+
+          </form>
+        </section>
+
+      </main>
+
+      <footer>
+        <p>© 2026 NEXUS. All Rights Reserved.</p>
+      </footer>
+
+      <button id="topBtn" aria-label="Back to top">↑</button>
+
+      <script>
+        const form = document.getElementById("contactForm");
+        const topBtn = document.getElementById("topBtn");
+
+        // Form interaction
+        form.addEventListener("submit", function(event) {
+          event.preventDefault();
+
+          const name = document.getElementById("name").value;
+
+          alert(`Thank you, ${name}! Your message has been received.`);
+
+          form.reset();
+        });
+
+        // Show back-to-top button
+        window.addEventListener("scroll", function() {
+          if (window.scrollY > 400) {
+            topBtn.style.display = "block";
+          } else {
+            topBtn.style.display = "none";
+          }
+        });
+
+        // Back to top
+        topBtn.addEventListener("click", function() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      </script>
+
+    </body>
+    </html>
+
+    
