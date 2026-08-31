@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+        }
+
+
+
+        .navbar {
+            height: 95px;
+            width: 100%;
+            background-color: #000;
+
+            display: flex;
+            align-items: center;
+
+            padding: 0 6%;
+        }
+
+
+
+        .main img {
+            width: 110px;
+            height: auto;
+            display: block;
+        }
+
+
+
+        .line {
+            height: 60px;
+            width: 2px;
+            background-color: white;
+
+            margin-left: 70px;
+            margin-right: 65px;
+        }
+
+
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .menu span {
+            margin-left: 8px;
+            font-size: 18px;
+        }
+
+
+
+        .is {
+            margin-left: auto;
+
+            background: #c400d9;
+            color: white;
+
+            border: none;
+            padding: 12px 30px;
+
+            border-radius: 8px;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .is:hover {
+            background: #e000f5;
+        }
+
+
+
+        .hero {
+            height: calc(100vh - 95px);
+
+            background-image: url("./bg.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+        }
+
+
+
+        .hr {
+            margin-top: -80px;
+        }
+
+        .hr h1 {
+            color: white;
+
+            font-size: 75px;
+            line-height: 1.2;
+
+            font-weight: 850;
+        }
+
+        .hr p {
+            color: white;
+
+            font-size: 30px;
+            margin-top: 25px;
+        }
+
+
+
+        #hr {
+            margin-top: 55px;
+        }
+
+        #hr button {
+            background: #d000d9;
+            color: white;
+
+            border: none;
+            border-radius: 10px;
+
+            padding: 20px 35px;
+
+            font-size: 24px;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        #hr button:hover {
+            background: #e500ed;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <nav class="navbar">
+
+        <div class="main">
+            <img src="./white-logo.png" alt="Logo">
+        </div>
+
+        <div class="line"></div>
+
+        <div class="menu">
+
+            <a href="#">Apps <span>⌄</span></a>
+
+            <a href="#">DAO</a>
+
+            <a href="#">Technology</a>
+
+            <a href="#">Token</a>
+
+            <a href="#">Contributors</a>
+
+        </div>
+
+        <button class="is">
+            Buy 1 Token
+        </button>
+
+    </nav>
+
+
+
+    <section class="hero">
+
+        <div>
+
+            <div class="hr">
+
+                <h1>
+                    Lets build a better <br>
+                    tomorrow, together.
+                </h1>
+
+                <p>
+                    Buy 1 Token. Join the DAO. Change the world
+                </p>
+
+            </div>
+
+
+            <div id="hr">
+
+                <button>
+                    Request early access
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
